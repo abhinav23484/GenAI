@@ -14,8 +14,8 @@ CD to RAG - CD RAG \
 Create an environment - python -m venv path-to-project_dir/GenAI/RAG/venv \
 Activate the environment - source venv/bin/activate \
 Install dependencies - pip install requirements.txt \
-Run it as an endpoint - uvicorn main:app --reload \
+Run it as an endpoint - uvicorn main:app --reload 
 
-The endpoint can be tested at - http://127.0.0.1:8000/docs \
+The endpoint can be tested at - http://127.0.0.1:8000/docs 
 
 Example run - 

@@ -38,3 +38,5 @@ The endpoint can be tested at - http://127.0.0.1:8000/docs
 
 Example run - (The document/dataset used here is RAG/datasets/bitcoin.pdf)
 ![Screenshot](RAG/images/example-run-fastAPi-swaggerDoc.jpg)
+
+I am loading the model using ctransformers. [Ctransformers](https://github.com/marella/ctransformers)

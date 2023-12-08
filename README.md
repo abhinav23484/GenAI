@@ -60,6 +60,8 @@ The model parameters are : -
 | `context_length`     | `int`       | The maximum context length to use.                              | `-1`    |
 | `gpu_layers`         | `int`       | The number of layers to run on GPU.                             | `0`     |
 
+In a simlilar way the model can be loaded using llamaindex or llamacpp or using transformers itself depending on the available infrastructure.
+
 The fastAPI host and port can be configured - 
 ```
 uvicorn main:app --host 0.0.0.0 --port 80

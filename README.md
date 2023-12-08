@@ -19,5 +19,5 @@ For the project under RAG is a implenetation of the piepline with native python 
 ```
 The endpoint can be tested at - http://127.0.0.1:8000/docs 
 
-Example run - 
+Example run - (The document/dataset used here is RAG/datasets/bitcoin.pdf)
 ![Screenshot](RAG/images/example-run-fastAPi-swaggerDoc.jpg)

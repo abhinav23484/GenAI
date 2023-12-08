@@ -59,3 +59,9 @@ The model parameters are : -
 | `threads`            | `int`       | The number of threads to use for evaluating tokens.             | `-1`    |
 | `context_length`     | `int`       | The maximum context length to use.                              | `-1`    |
 | `gpu_layers`         | `int`       | The number of layers to run on GPU.                             | `0`     |
+
+The fastAPI host and port can be configured - 
+```
+uvicorn main:app --host 0.0.0.0 --port 80
+```
+Now this endpoint can be used to deploy and integrate it with other UI applications.

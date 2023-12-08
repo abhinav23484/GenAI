@@ -39,4 +39,23 @@ The endpoint can be tested at - http://127.0.0.1:8000/docs
 Example run - (The document/dataset used here is RAG/datasets/bitcoin.pdf)
 ![Screenshot](RAG/images/example-run-fastAPi-swaggerDoc.jpg)
 
-I am loading the model using ctransformers. [Ctransformers](https://github.com/marella/ctransformers)
+Here the model is loaded using ctransformers. [Ctransformers](https://github.com/marella/ctransformers)
+The model parameters are : -
+###### Config
+
+| Parameter            | Type        | Description                                                     | Default |
+| :------------------- | :---------- | :-------------------------------------------------------------- | :------ |
+| `top_k`              | `int`       | The top-k value to use for sampling.                            | `40`    |
+| `top_p`              | `float`     | The top-p value to use for sampling.                            | `0.95`  |
+| `temperature`        | `float`     | The temperature to use for sampling.                            | `0.8`   |
+| `repetition_penalty` | `float`     | The repetition penalty to use for sampling.                     | `1.1`   |
+| `last_n_tokens`      | `int`       | The number of last tokens to use for repetition penalty.        | `64`    |
+| `seed`               | `int`       | The seed value to use for sampling tokens.                      | `-1`    |
+| `max_new_tokens`     | `int`       | The maximum number of new tokens to generate.                   | `256`   |
+| `stop`               | `List[str]` | A list of sequences to stop generation when encountered.        | `None`  |
+| `stream`             | `bool`      | Whether to stream the generated text.                           | `False` |
+| `reset`              | `bool`      | Whether to reset the model state before generating text.        | `True`  |
+| `batch_size`         | `int`       | The batch size to use for evaluating tokens in a single prompt. | `8`     |
+| `threads`            | `int`       | The number of threads to use for evaluating tokens.             | `-1`    |
+| `context_length`     | `int`       | The maximum context length to use.                              | `-1`    |
+| `gpu_layers`         | `int`       | The number of layers to run on GPU.                             | `0`     |

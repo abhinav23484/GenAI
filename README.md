@@ -20,3 +20,4 @@ For the project under RAG is a implenetation of the piepline with native python 
 The endpoint can be tested at - http://127.0.0.1:8000/docs 
 
 Example run - 
+![Screenshot] (images/example-run-fastAPi-swaggerDoc.jpg)
